@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — CHRODEV</title>
+<meta name="description" content="About CHRODEV — Computer Science student interested in IT, cybersecurity, and technology.">
+<script>
+  if (localStorage.getItem("theme") === "dark") {
+    document.documentElement.classList.add("dark");
+  }
+</script>
+<link rel="stylesheet" href="css/output.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
+</head>
+<body class="font-body bg-bg dark:bg-bg-dark text-navy dark:text-navy-light transition-colors min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 bg-bg/95 dark:bg-bg-dark/95 backdrop-blur border-b-4 border-navy dark:border-navy-light">
+    <div class="max-w-none mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-2 font-pixel text-xs sm:text-sm">
+        CHRODEV
+      </a>
+      <nav class="hidden md:flex items-center gap-4 lg:gap-6 font-bold text-sm lg:text-base">
+        <a href="index.html" class="hover:text-pink">Home</a>
+        <a href="about.html" class="text-pink">About</a>
+        <a href="projects.html" class="hover:text-pink">Projects</a>
+        <a href="experience.html" class="hover:text-pink">Experience &amp; Achievements</a>
+        <a href="contact.html" class="hover:text-pink">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button id="theme-toggle" aria-label="Toggle dark mode" class="pixel-btn bg-card dark:bg-card-dark px-3 py-2 font-pixel text-[10px] sm:text-xs">TOGGLE</button>
+        <button id="menu-toggle" aria-label="Toggle menu" class="md:hidden pixel-btn bg-card dark:bg-card-dark px-3 py-2 font-pixel text-[10px] sm:text-xs">MENU</button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col gap-4 max-w-none mx-auto w-full px-4 sm:px-6 pb-4 font-bold">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="text-pink">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience &amp; Achievements</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <section class="max-w-5xl mx-auto px-4 py-14 md:py-20">
+      <h1 class="font-pixel text-xl sm:text-3xl mb-10 text-center">ABOUT ME</h1>
+
+      <div class="flex flex-col md:flex-row gap-8">
+        <!-- PROFILE CARD -->
+        <div class="pixel-card bg-card dark:bg-card-dark p-6 flex flex-col items-center gap-4 h-fit md:w-64 flex-shrink-0">
+          <div class="w-32 h-32 pixel-border bg-lavender-deep flex items-center justify-center text-5xl">
+            <img src="assets/foto-ilo.jpg" alt="Ilo" class="w-full h-full object-cover">
+          </div>
+          <p class="font-pixel text-sm">ILO</p>
+          <p class="text-xs font-bold text-pink-dark text-center">Computer Science Student</p>
+          <div class="w-full border-t-2 border-navy/20 dark:border-navy-light/20 pt-4 space-y-3 text-xs font-bold text-center">
+            <p>Undiksha — FTK</p>
+            <p>Bali</p>
+            <p>Focus: Full-Stack Learner</p>
+          </div>
+        </div>
+
+        <!-- BIO + SKILL BARS -->
+        <div class="flex flex-col gap-8 flex-1 min-w-0">
+          <div class="pixel-card bg-card dark:bg-card-dark p-6">
+            <h2 class="font-pixel text-sm sm:text-base mb-3 text-pink-dark">PROFILE</h2>
+            <p class="text-sm sm:text-base font-semibold leading-relaxed mb-4">
+              I'm a 5th-semester Computer Science student interested in IT, cybersecurity, and technology. I enjoy solving problems, learning new technologies, and working on projects that challenge me to grow.
+            </p>
+            <p class="text-sm sm:text-base font-semibold leading-relaxed">
+              Currently exploring more in cybersecurity, AI, and software development while building my technical and professional skills.
+            </p>
+          </div>
+
+          <div class="pixel-card bg-card dark:bg-card-dark p-6">
+            <h2 class="font-pixel text-sm sm:text-base mb-4 text-pink-dark">SKILLS</h2>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-xs font-bold mb-1">
+                  <span>Cybersecurity / CTF</span><span>85%</span>
+                </div>
+                <div class="h-4 pixel-border bg-navy/10 dark:bg-navy-light/10">
+                  <div class="h-full bg-pink" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-xs font-bold mb-1">
+                  <span>UI / UX Design</span><span>75%</span>
+                </div>
+                <div class="h-4 pixel-border bg-navy/10 dark:bg-navy-light/10">
+                  <div class="h-full bg-pink" style="width: 75%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-xs font-bold mb-1">
+                  <span>Web Development</span><span>70%</span>
+                </div>
+                <div class="h-4 pixel-border bg-navy/10 dark:bg-navy-light/10">
+                  <div class="h-full bg-pink" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pixel-card bg-card dark:bg-card-dark p-6">
+            <h2 class="font-pixel text-sm sm:text-base mb-3 text-pink-dark">TOOLS</h2>
+            <div class="flex flex-wrap gap-2">
+              <span class="pixel-border bg-pink text-white text-xs font-pixel px-3 py-2">HTML</span>
+              <span class="pixel-border bg-pink text-white text-xs font-pixel px-3 py-2">CSS</span>
+              <span class="pixel-border bg-pink text-white text-xs font-pixel px-3 py-2">TAILWIND</span>
+              <span class="pixel-border bg-pink text-white text-xs font-pixel px-3 py-2">JAVASCRIPT</span>
+              <span class="pixel-border bg-pink text-white text-xs font-pixel px-3 py-2">FIGMA</span>
+              <span class="pixel-border bg-pink text-white text-xs font-pixel px-3 py-2">BURP SUITE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-navy dark:bg-bg-dark text-navy-light text-center py-6 font-semibold border-t-4 border-navy dark:border-navy-light">
+    <p>&copy; 2026 CHRODEV — Built with Tailwind CSS</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
